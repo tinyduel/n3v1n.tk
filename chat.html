@@ -1,7 +1,9 @@
-<text>Username: </text><textarea></textarea><br>
+<text>Username: </text><textarea id="name"></textarea><br>
 <text>Message: </text><textarea></textarea>
 <SCRIPT>
-document.cookie = "username=John Doe";
+var name = document.getElementById("name").value
+
+document.cookie = "username=" + name;
 
   <button onclick="notifyMe()">Notify me!</button>
 
