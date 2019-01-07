@@ -36,6 +36,9 @@ function notifyMe() {
   }
 
 }
-
+function keepname() {
+  var name = document.getElementById("name").value;
+  document.cookie = "username=" + name;
+}
 </SCRIPT>
 <button onclick="notifyMe()">Notify me!</button>
