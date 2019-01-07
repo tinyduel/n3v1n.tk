@@ -1,7 +1,7 @@
 <text>Username: </text><textarea id="name"></textarea><br>
 <text>Message: </text><textarea></textarea>
 <SCRIPT>
-var name = document.getElementById("name").value
+var name = document.getElementById("name").value;
 
 document.cookie = "username=" + name;
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function notifyMe() {
-  var name = document.getElementById("name").value
+  var name = document.getElementById("name").value;
   document.cookie = "username=" + name;
   if (Notification.permission !== "granted")
     Notification.requestPermission();
