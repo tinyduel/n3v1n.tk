@@ -1,4 +1,3 @@
-var random = Math.random( ); 
 
 // Generate the user private channel
   var channel = generateUserChannel();
@@ -82,6 +81,6 @@ function generateUserChannel(){
 // send a message to the user private channel to trigger a push notification
 function send(){
   if (client) {
-    client.send(channel, random);
+    client.send(channel, "hello this is ok");
   };
 }
