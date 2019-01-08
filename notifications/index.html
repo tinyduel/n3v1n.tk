@@ -1,1 +1,6 @@
-<button id="sendButton" class="button-primary" onclick="javascript:var myNotification = new Notification(Hi);">Send me a push notification</button>
+<script>
+function send() {
+  var myNotification = new Notification(Hi);
+};
+</script>
+<button id="sendButton" class="button-primary" onclick="javascript:send();">Send me a push notification</button>
