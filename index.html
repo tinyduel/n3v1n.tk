@@ -20,7 +20,14 @@ background-color: #ffffff
 </style>
 <script>
 var random = Math.random( ); 
-document.cookie = "username=" + random;
+function doOnce() {
+  if (document.cookie.replace(/(?:(?:^|.*;\s*)doSomethingOnlyOnce\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+    alert("Do something here!");
+    document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+    document.cookie = "userID=" + random; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+  }
+}
 </script>
   
   
